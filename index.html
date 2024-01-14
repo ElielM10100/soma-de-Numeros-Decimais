@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma de Números Decimais</title>
+</head>
+<body>
+    <script>
+        // Solicitar dois números ao usuário
+        var numero1 = prompt("Digite o primeiro número decimal:");
+        var numero2 = prompt("Digite o segundo número decimal:");
+
+        // Converter os números para decimais
+        var decimal1 = parseFloat(numero1);
+        var decimal2 = parseFloat(numero2);
+
+        // Verificar se as conversões foram bem-sucedidas
+        if (!isNaN(decimal1) && !isNaN(decimal2)) {
+            // Realizar a soma
+            var resultado = decimal1 + decimal2;
+
+            // Exibir o resultado
+            alert("A soma dos números é: " + resultado.toFixed(2)); // O toFixed(2) limita o resultado a duas casas decimais
+        } else {
+            // Mensagem de erro se a entrada não for um número decimal válido
+            alert("Por favor, digite números decimais válidos.");
+        }
+    </script>
+</body>
+</html>
